@@ -7,12 +7,29 @@
 # The function will return a list with a int values ordered from largest to smallest.
 # example [1, True, '123', False, 6, ()] will be transformed into [123, 6, 1, 1, 0, 0]
 
-def ordered_ints(list_of_objects: list):
-    pass
-    # <your code here>
 
+   
+lista=[1, True, '123', False, 6, ()]
+
+def ordered_ints(list_of_objects: list=[1, True, '123', False, 6, ()]):
+   lista = [1, True, '123', False, 6, ()]
+   lista = []
+   lista=[1, True, '123', False, 6, ()]
+   lista=[]
+   for i in lista:
+    lista.append(int(i))
+    print(lista1)
+
+lista = [123,6,1,1,0,0]
+print(len(lista))
+print(sorted(lista))
+lista.sort(reverse=True)
+print(lista)
 
 print(ordered_ints([1, True, '123', False, 6, ()]))
+
+
+
 
 
 # 25P - (do not rush to resolve this)
@@ -23,25 +40,30 @@ print(ordered_ints([1, True, '123', False, 6, ()]))
 # The function will receive an int that indicate the number of iterations, or how many times we have (x^2)+
 # when resolving try using this logic: 1^2+2^2 is 1^2+(1^2+1^2)^2
 
-def sum_of_square(n: int):
-    pass
-    # <your code here>
+def sum_of_squares_2(n):
+    result = 0
+    for n in range(1,n + 1):
+        result = result + n**2
+    return result
+print(sum_of_squares_2(10))
 
 
-print(sum_of_square(10))
 
 
 # 25P
 # Write a function that will calculate factorial of numbers squared.
 # For n = 3 the function should calculate (1^2)*(2^2)*(3^2)
 
-def factorial_of_squares(n: int):
-    pass
-    # <your code here>
 
 
+
+def factorial_of_squares(n):
+     result = 1
+     for i in range(n):
+         i += 1
+         result *= i**2
+     return result
 print(factorial_of_squares(5))
-
 
 # 25P
 # Write a function that takes in a string as argument and returns a tuple after performing the following actions:
@@ -51,9 +73,23 @@ print(factorial_of_squares(5))
 # - returned tuple contains the two processed strings
 # example: "1234567a Text to te5t" will become  ("1234567A", "_ext_to_te_t")
 
-def process_text(text: str):
-    pass
-    # <your code here>
+    
+text_str  = "(1,2,3) , (4,5,6) , (3,4,5)"
+
+print(text_str)
+print(type(text_str))
+
+result = tuple(eval(text_str))
+print(result)
+print(type(result))
+
+print("1 2 3,text". split())
+print("text_de_t_de" . title())
+print("text_de_t_de".upper())
+print("text de t " . replace("text de t","Text_de_t"))
+
+my_tuple = ("Text_de_t")
+print(my_tuple)
 
 
-print(process_text('1234567a Text to te5t'))
+
